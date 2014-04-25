@@ -99,7 +99,7 @@ void commas(ifstream& in, ofstream& out) {
 			out << line << "," << endl;
 		else out << line << endl;
 	}
-}
+}  //hello, my name is santiago
 
 int comma_count(stringstream& ss) {
 	string s;
