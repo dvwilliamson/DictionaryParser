@@ -40,39 +40,6 @@ int comma_pos_check(string s) {
 	return -1;
 }
 
-//string def_pos_check(string s, string& def2) {
-//	// if there is a pos in the middle of the line, 
-//	// then this will return it and the definition that was before it
-//	if (s == "")
-//		return false;
-//	for (int i = 0; i < s.length(); ++i) {
-//		if (s[i] == '.') {
-//			int j = i;
-//			if (s[i + 1] == ')' || s[i + 1] == ']') {
-//				break;
-//			}
-//			else {
-//				while (s[j] != ' ') {
-//					j--;
-//				}
-//			}
-//			// this variable will be the place holder for the index of the 
-//			// definition up to the space before the pos
-//			// used in the for loop below
-//			int m = j;
-//			string pos;
-//			while (j < i) {
-//				pos += s[++j];
-//			}
-//			for (int n = 0; n < m; ++n) {
-//				def2 += s[n];
-//			}
-//			return pos;
-//		}
-//	}
-//	return "";
-//}
-
 bool pos_check(string& s) {
 	if (s == "")
 		return false;
