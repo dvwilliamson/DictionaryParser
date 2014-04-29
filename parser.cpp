@@ -6,6 +6,37 @@
 
 using namespace std;
 
+/*			**STEPS FOR PRE-FORMATTING**
+ *
+ *	this parser takes in two files: the list of english words and the formatted file of 
+ *	corresponding definitions.
+ *
+ *	get rid of everything in parenthesis in the file of english words.
+ *
+ *	Get list of all parts of speech
+ *
+ *	POS should have a period after it
+ *		if it doesn't, change to this format : adj.
+ *	
+ *	find all parts of speech in the middle of a line and replace them
+ *	with \n2 pos.
+ *	
+ *	then change all brackets "[]" and curly braces "{}" to parenthesis
+ *	
+ *	make sure there is no extra whitespace after opening parenthesis or before closing parenthesis
+ *	make sure every opening parenthesis has a comma then a space before it (or a part of speech)
+ *	
+ *	do the same with everything inside parenthesis (put them on their own \n with a 2 in front) (?<!\.\ )(\()
+ *	Also: the definitions in the parenthesis should be the only thing on that line. So put a \n after each
+ *	close parenthesis
+ *	
+ *	check for errors: multiple of any special character (commas, parenthesis, quotes etc.) replace with 
+ *	just one
+ *
+ *	for now, all files have to end with THIS_IS_THE_END
+ *	add a comma to the end of every line
+ */
+
 int parenthesis_check(string s) {
 	if (s == "")
 		return -1;
