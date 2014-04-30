@@ -11,8 +11,11 @@ using namespace std;
  *	this parser takes in two files: the list of english words and the formatted file of 
  *	corresponding definitions.
  *
- *	get rid of everything in parenthesis in the file of english words.
- *
+ *	get rid of the space in between the word and parenthesis
+ *		ex:
+ *		aardvark (animal) would turn into:
+ *		aardvark(animal)
+ *	
  *	Get list of all parts of speech
  *
  *	POS should have a period after it
