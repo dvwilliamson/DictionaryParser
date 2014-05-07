@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-f = open("swedish.txt", 'r+')
+f = open("Parts.txt", 'r+')
 
 doc = f.read().split('\n')
 
