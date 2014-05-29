@@ -5,11 +5,11 @@ import codecs
 
 """	The input file should have quotes (") as text qualifiers and commas (,) as field delimiters. """
 
-f = codecs.open("russian.txt", "r")#input file
-f2 = codecs.open("English-Russian.txt", "w")#output file
+f = codecs.open("french.txt", "r")#input file
+f2 = codecs.open("English-French.txt", "w")#output file
 doc = f.read().split("\n")
 #enter the PartsOfSpeech in this list AND in the check down below.
-PartsOfSpeech = ['нареч.', 'pref.', 'мест.', 'прил.', 'межд.', 'предл.', 'г.', 'с.', 'art.']
+PartsOfSpeech = ['conj.', 'adv.', 'pron.', 'adj.', 'avv.', 'interj.', 'prép.', 'n.']
 
 """format(): uses regular expressions to create standards for easier formatting
 	then takes definitions and prints out one per line with the part of speech at the end of the line"""
@@ -51,9 +51,6 @@ def format():
 			else:
 				for i in defs:
 					definition = '\"%s\",\"%s\",' % (engword, i)
-		if engword == 'A-bomb':
-			print 'appples are cool'
-	
 format()
 f.close()
 f2.close()
