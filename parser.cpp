@@ -7,7 +7,7 @@
 using namespace std;
 
 /*			**STEPS FOR PRE-FORMATTING**
- *
+ *	USE PYTHON PARSER
  *	this parser takes in two files: the list of english words and the formatted file of 
  *	corresponding definitions.
  *

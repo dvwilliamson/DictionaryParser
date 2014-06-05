@@ -3,8 +3,10 @@
 import re
 import codecs
 import os
-
-f = codecs.open('french.txt', 'r', 'utf-8')
+"""
+	Doesn't work well with the whole dictionary file. You should use only the definitions.
+"""
+f = codecs.open('resources/English-Japanese.txt', 'r', 'utf-8')
 f2 = codecs.open('Rando.txt' ,'w', 'utf-8')
 
 doc = f.read().split('\n')
@@ -19,7 +21,7 @@ for line in doc:
 f.close()
 f2.close()
 
-Pos = codecs.open("posInDictionary.txt", 'w', 'utf-8')
+Pos = codecs.open("posInDictionary_JP.txt", 'w', 'utf-8')
 with codecs.open("Rando.txt", "r", "utf-8") as f:
 	doc = f.read().split('\n')
 	doc = set(doc)
