@@ -26,7 +26,7 @@ def format():
 		line = re.sub('\"', '\'', line)
 		line = line.rstrip('\'').rstrip()
 		
-		#special lines for the japanese dictionary
+		#special line for the japanese dictionary
 		line = re.sub(' #', ',', line)
 
 		engword = line.split("\',\'")[0].replace("\'", "").split(' (')[0]
